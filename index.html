@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Statement Request Application</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <div class="form-container">
+        <header>
+            <div class="header-left">
+                <img src="data:image/png;base64,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" alt="Government Logo" class="logo">
+                <h3>Government of India</h3>
+            </div>
+        </header>
+
+        <h2>MEDICAL STATEMENT REQUEST APPLICATION</h2>
+        <p class="instructions">
+            Medical statements are obtained for validation reasons, due to direct services, and other necessary duties that are protected.
+            Please fill out the application thoroughly. Completion of this application allows the Medical Services Branch to obtain an
+            appropriate medical statement.
+        </p>
+
+        <form id="medicalStatementForm">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth (YYYY-MM-DD):</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+            </div>
+
+            <div class="form-group">
+                <label for="requestDetails">Reason for Request:</label>
+                <textarea id="requestDetails" name="requestDetails" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="physicianName">Physician Name:</label>
+                <input type="text" id="physicianName" name="physicianName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="clinicName">Clinic Name:</label>
+                <input type="text" id="clinicName" name="clinicName" required>
+            </div>
+
+            <button type="submit">Submit Application</button>
+        </form>
+
+        <footer>
+            <p>Ensure all sections are completed. Contact Medical Services Branch for further information if needed.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
